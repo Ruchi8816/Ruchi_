@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+border-color: aqua;
+padding: 10px;
+border: 2px dotted red;
+box-shadow: 5px 10px grey;
+        }
+        button{
+            background-color: blue;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+input{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid blue;
+}
+    </style>
+</head>
+<body>
+    <div>
+
+<h1>Check 1 to 10 prog</h1>
+<input type="text" name="input" id="input">
+<button onclick="chck()">click </button>
+<h3>Result : <span style="background-color: yellow;padding: 10px; ;" id="out">Output</span></h3>
+    </div>
+    <script>
+        function chck()
+        {
+        var x=parseInt(document.getElementById("input").value);
+        switch(true)
+        {
+        case isNaN(x):
+            document.getElementById("out").innerHTML="This is not a number";
+            break;
+        case (x<1):
+            document.getElementById("out").innerHTML="Given Number is less than 10";
+            break;
+        case (x>10):
+            document.getElementById("out").innerHTML="Given Number is greter  than 10";
+            break;
+        default:
+            document.getElementById("out").innerHTML="ok valid number is between 1 to 10 only";
+            break;
+    
+    }
+}
+    </script>
+
+</body>
+</html>

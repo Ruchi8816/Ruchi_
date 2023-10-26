@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+>
+    <script type="text/javascript">
+        // declaring variables
+    var a=33;
+        var b=10;
+        var c="Test";
+        var x=true;
+        var y=false;
+        var linkbreak="<br/>";
+
+        // airthmetic operators
+        document.write("a+b=");
+        result= a+b;
+        document.write(result);
+        document.write(linkbreak);
+
+        //relational operator
+        document.write("(a&ltb)=>");
+        result=(a<b);
+        document.write(result);
+        document.write(linkbreak);
+
+        //logical operators
+        document.write("(x||y)==>");
+        result=(x||y);
+        document.write(result);
+        document.write(linkbreak);
+        
+        //assignment operator
+        document.write("a*=b=>");
+        result=(a*b);  //a=a*b (a=33x10)=330
+        document.write(result);
+        document.write(linkbreak);
+
+        //conditional operator
+        document.write("((a&ltb)?100:200)=>");
+        result=(a<b)?100:200;  //(33<10)?100:200 => (33<10)false?100(true block):200(false block)
+        document.write(result);
+        document.write(linkbreak);
+
+        //special operator
+        document.write(typeof a=="string"?"A is string":"A is Numaric value");
+        document.write("Result==>");
+        document.write(result);
+        document.write(linkbreak);
+            
+
+    </script>        
+</body>
+</html>
